@@ -18,6 +18,11 @@
       font-size: 12px;
       text-align: right;
     }
+
+    @include media-query($on-palm) {
+      width: 100%;
+      text-align: center;
+    }
 }
 
 .site-nav {
@@ -49,6 +54,15 @@
 /**
  * Site footer
  */
+
+ .footer.section {
+    padding: 25px 0px 5px;
+
+    a, p {
+      color: #000;
+    }
+ }
+
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;

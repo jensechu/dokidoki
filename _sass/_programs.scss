@@ -2,6 +2,10 @@
   width: 23.5%;
   float: left;
   margin-right: 10px;
+
+  @include media-query($on-palm) {
+    width: 100%;
+  }
 }
 
 .program-row {
@@ -41,4 +45,13 @@
   &:hover {
     color: $lightGreen;
   }
+}
+
+.heart-footer {
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-family: dokidoki;
+  color: $green;
+  text-shadow: -1px -1px 0 $lightGreen, 1px -1px 0 $lightGreen, -1px 1px 0 $lightGreen, 1px 1px 0 $lightGreen;
 }
