@@ -36,6 +36,10 @@
   padding: 5px;
   font-size: 12px;
   background: $lightGreen;
+
+  .contact-link:hover {
+    color: $green;
+  }
 }
 
 .contact-link {
