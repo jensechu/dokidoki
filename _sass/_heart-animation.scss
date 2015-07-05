@@ -1,0 +1,62 @@
+$largeHeart: 300px;
+$heartOffset: ($largeHeart / 4);
+
+#heart-container {
+  padding: 100px 0px 0px 0px;
+}
+
+.heart-waves {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  font-family: dokidoki;
+}
+
+.heart-wave {
+  color: $pink;
+  text-shadow: -1px -1px 0 $lightGreen, 1px -1px 0 $lightGreen, -1px 1px 0 $lightGreen, 1px 1px 0 $lightGreen;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: pulse 6s infinite;
+
+  &.large {
+    width: 400px;
+    font-size: $largeHeart;
+    top: -($heartOffset * 2.5);
+    left: -15px;
+    -webkit-animation-delay: 4s;
+  }
+
+  &.medium {
+    width: 300px;
+    top: -($heartOffset * 2);
+    left: $heartOffset - ($heartOffset / 2);
+    font-size: $largeHeart - $heartOffset;
+    -webkit-animation-delay: 2s;
+  }
+
+  &.small {
+    width: 200px;
+    top: -($heartOffset * 1.5);
+    left: $heartOffset * 1.2;
+    font-size: $largeHeart - ($heartOffset * 2);
+  }
+}
+
+@keyframes pulse {
+  0%   { opacity: 1; }
+  25%   { opacity: 0; }
+  50%   { opacity: 0; }
+  75%   { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#tower {
+  font-size: $largeHeart;
+  font-family: dokidoki;
+  color: $lightGreen;
+  line-height: 210px;
+}

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="section green" id="heart-container">
+  <div class="section-inner" id="status-container">
+
+    <div class="heart-waves">
+      <div id="tower">&#9745;</div>
+
+      <div class="heart-wave large">
+                &#9826;
+      </div>
+
+      <div class="heart-wave medium">
+                &#9826;
+      </div>
+
+      <div class="heart-wave small">
+        &#9826;
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="section lightGreen">
+  <div class="section-inner">
+    <a name="schedule"></a>
+    <h1 class="page-heading">スケジュール</h1>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+</div>
