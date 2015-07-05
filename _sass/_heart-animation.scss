@@ -6,7 +6,7 @@ $heartOffset: ($largeHeart / 4);
 }
 
 .heart-waves {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -17,38 +17,37 @@ $heartOffset: ($largeHeart / 4);
   color: $pink;
   text-shadow: -1px -1px 0 $lightGreen, 1px -1px 0 $lightGreen, -1px 1px 0 $lightGreen, 1px 1px 0 $lightGreen;
   position: absolute;
-  top: 0;
-  left: 0;
   opacity: 0;
-  animation: pulse 6s infinite;
+  animation: pulse 4s infinite;
+  text-align: center;
 
   &.large {
-    width: 400px;
+    width: 100%;
     font-size: $largeHeart;
     top: -($heartOffset * 2.5);
-    left: -15px;
-    -webkit-animation-delay: 4s;
-  }
-
-  &.medium {
-    width: 300px;
-    top: -($heartOffset * 2);
-    left: $heartOffset - ($heartOffset / 2);
-    font-size: $largeHeart - $heartOffset;
+    left: -16px;
     -webkit-animation-delay: 2s;
   }
 
+  &.medium {
+    width: 100%;
+    top: -($heartOffset * 2);
+    left: -12px;
+    font-size: $largeHeart - $heartOffset;
+    -webkit-animation-delay: 1s;
+  }
+
   &.small {
-    width: 200px;
+    width: 100%;
     top: -($heartOffset * 1.5);
-    left: $heartOffset * 1.2;
+    left: -8px;
     font-size: $largeHeart - ($heartOffset * 2);
   }
 }
 
 @keyframes pulse {
   0%   { opacity: 1; }
-  25%   { opacity: 0; }
+  10%   { opacity: 1; }
   50%   { opacity: 0; }
   75%   { opacity: 0; }
   100% { opacity: 0; }

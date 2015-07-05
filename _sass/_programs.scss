@@ -1,0 +1,44 @@
+.program-container {
+  width: 23.5%;
+  float: left;
+  margin-right: 10px;
+}
+
+.program-row {
+  width: 100%;
+  float: left;
+  margin: 15px 0px;
+}
+
+.program-title {
+  background: $lightGreen;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+  a {
+    font-size: 15px;
+    color: #000;
+  }
+}
+
+.program-description {
+  padding: 5px;
+  margin-bottom: 5px;
+  background: $lightGreen;
+}
+
+.program-dj {
+  padding: 5px;
+  font-size: 12px;
+  background: $lightGreen;
+}
+
+.contact-link {
+  text-decoration: underline;
+  color: #000;
+
+  &:hover {
+    color: $lightGreen;
+  }
+}

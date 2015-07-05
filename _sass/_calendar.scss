@@ -1,0 +1,56 @@
+.day-box {
+  float: left;
+  width: 12.5%;
+  padding: 5px;
+  margin: 2px;
+  background-color: $green;
+  height: 60px;
+
+  rt {
+    text-align: right;
+  }
+
+  a {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .time {
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+
+  @include media-query($on-palm) {
+    width: 100%;
+  }
+}
+
+.week-row {
+  @include media-query($on-palm) {
+    display: inline-block;
+    width: 75%;
+  }
+
+  &.header-row {
+    .day-box {
+      padding: 15px 5px 5px 5px;
+      text-align: center;
+      height: 25px;
+
+      @include media-query($on-palm) {
+        height: 50px;
+      }
+    }
+
+
+    @include media-query($on-palm) {
+      width: 15%;
+      margin-right: 10px;
+    }
+  }
+}

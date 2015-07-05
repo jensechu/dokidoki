@@ -168,7 +168,7 @@ pre {
 
 .section {
  width: 100%;
- padding: 50px 0px;
+ padding: 100px 0px;
 }
 
 .pink {
@@ -206,6 +206,22 @@ pre {
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
+}
+
+.section-heading {
+  font-family: kei;
+
+  rt {
+    text-align: right;
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
+  }
+
+  @include media-query($on-palm) {
+    text-align: center;
+  }
 }
 
 
