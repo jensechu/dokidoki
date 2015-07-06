@@ -1,0 +1,38 @@
+
+.site-title {
+  font-family: 'Kei';
+  font-size: 45px;
+
+
+  .text {
+    float: left;
+  }
+
+
+  .translation {
+    font-size: 12px;
+    text-align: right;
+    line-height: 0px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.site-nav {
+  max-width: 200px;
+  float: right;
+  text-align: right;
+}
+
+.nav-link {
+  margin-bottom: 15px;
+  display: block;
+
+  .translation {
+    font-size: 12px;
+    text-align: right;
+    line-height: 5px;
+    width: 100%;
+    display: block;
+  }
+}
