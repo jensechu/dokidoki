@@ -6,10 +6,7 @@
 
 .streaming-container {
   padding: 0px;
-
-  &.offline {
-    display: none;
-  }
+  display: none;
 
   &.online {
     display: block;
@@ -41,6 +38,10 @@
     rt {
       font-size: 12px;
       text-align: right;
+      
+      @include media-query($on-palm) {
+        text-align: center;
+      }
     }
 
     @include media-query($on-palm) {
@@ -66,6 +67,7 @@
         margin-bottom: 10px;
 
         rt {
+          font-size: 12px;
           text-align: right;
         }
     }

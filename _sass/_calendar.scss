@@ -6,7 +6,30 @@
   background-color: $green;
   height: 60px;
 
+  @include media-query($on-palm) {
+    ruby {
+      display: none;
+
+      &.mobile {
+        display: block;
+      }
+    }
+  }
+
+  .mobile {
+    display: none;
+
+      font-size: 28px;
+      color: $lightGreen;
+
+    rt {
+      color: black;
+      text-align: center;
+    }
+  }
+
   rt {
+    font-size: 12px;
     text-align: right;
   }
 
@@ -40,7 +63,9 @@
     .day-box {
       padding: 15px 5px 5px 5px;
       text-align: center;
-      height: 25px;
+      height: 35px;
+      font-size: 25px;
+      color: #000;
 
       @include media-query($on-palm) {
         height: 50px;

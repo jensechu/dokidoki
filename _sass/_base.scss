@@ -220,6 +220,7 @@ pre {
 
   rt {
     text-align: right;
+    line-height: 25px;
 
     @include media-query($on-palm) {
       text-align: center;
@@ -228,6 +229,7 @@ pre {
 
   @include media-query($on-palm) {
     text-align: center;
+    font-size: 25px;
   }
 }
 
