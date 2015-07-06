@@ -1,11 +1,19 @@
-
 .site-title {
   font-family: 'Kei';
   font-size: 45px;
 
+  @include media-query($on-palm) {
+    text-align: center;
+  }
+
 
   .text {
     float: left;
+
+    @include media-query($on-palm) {
+      display: block;
+      float: none;
+    }
   }
 
 
@@ -15,6 +23,10 @@
     line-height: 0px;
     width: 100%;
     display: block;
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
   }
 }
 
@@ -22,6 +34,10 @@
   max-width: 200px;
   float: right;
   text-align: right;
+
+  @include media-query($on-palm) {
+    display: none;
+  }
 }
 
 .nav-link {

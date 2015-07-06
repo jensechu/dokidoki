@@ -25,9 +25,31 @@
 
 .section-heading {
   font-family: 'Kei';
+  width: 100%;
+  display: inline-block;
 
   @include media-query($on-palm) {
     text-align: center;
     font-size: 25px;
+  }
+
+  .text {
+    float: left;
+
+    @include media-query($on-palm) {
+      float: none;
+    }
+  }
+
+  .translation {
+    font-size: 12px;
+    text-align: right;
+    line-height: 5px;
+    width: 100%;
+    display: block;
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
   }
 }
