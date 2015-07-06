@@ -1,81 +1,54 @@
+.calendar-header-row {
+  display: inline-block;
+  width: 100%;
+
+  @include media-query($on-palm) {
+    width: 15%;
+  }
+
+  .day-box {
+    @include media-query($on-palm) {
+      width: 100%;
+      float: left;
+    }
+  }
+}
+
 .day-box {
   float: left;
   width: 12.5%;
   padding: 5px;
   margin: 2px;
   background-color: $green;
-  height: 60px;
 
-  @include media-query($on-palm) {
-    ruby {
+  .text {
+    text-align: center;
+    display: block;
+    width: 100%;
+
+    .desktop {
+      @include media-query($on-palm) {
+        display: none;
+      }
+    }
+
+    .mobile {
       display: none;
+      font-size: 25px;
+      color: $lightGreen;
 
-      &.mobile {
+      @include media-query($on-palm) {
         display: block;
       }
     }
   }
 
-  .mobile {
-    display: none;
-
-      font-size: 28px;
-      color: $lightGreen;
-
-    rt {
-      color: black;
-      text-align: center;
-    }
-  }
-
-  rt {
+  .translation {
     font-size: 12px;
-    text-align: right;
-  }
-
-  a {
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
-    display: block;
-    font-weight: bold;
-    color: #000;
-  }
-
-  .time {
-    font-size: 10px;
-    font-weight: bold;
-    vertical-align: top;
-  }
-
-  @include media-query($on-palm) {
+    text-align: center;
+    line-height: 0px;
     width: 100%;
-  }
-}
-
-.week-row {
-  @include media-query($on-palm) {
-    display: inline-block;
-    width: 75%;
-  }
-
-  &.header-row {
-    .day-box {
-      padding: 15px 5px 5px 5px;
-      text-align: center;
-      height: 35px;
-      font-size: 25px;
-      color: #000;
-
-      @include media-query($on-palm) {
-        height: 50px;
-      }
-    }
-
-
-    @include media-query($on-palm) {
-      width: 15%;
-      margin-right: 10px;
-    }
+    display: block;
+    margin: 5px 0px 5px 0px;
   }
 }
