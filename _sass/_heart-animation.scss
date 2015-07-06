@@ -18,9 +18,9 @@ $heartOffset: ($largeHeart / 4);
   text-shadow: -1px -1px 0 $lightGreen, 1px -1px 0 $lightGreen, -1px 1px 0 $lightGreen, 1px 1px 0 $lightGreen;
   position: absolute;
   opacity: 0;
-  animation: pulse 3s infinite;
-  -webkit-animation: pulse 3s infinite;
-  -moz-animation: pulse 3s infinite;
+  animation: pulse 4s infinite;
+  -webkit-animation: pulse 4s infinite;
+  -moz-animation: pulse 4s infinite;
   text-align: center;
 
   &.large {
