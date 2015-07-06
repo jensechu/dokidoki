@@ -2,43 +2,9 @@
 layout: default
 ---
 
-<div class="section green streaming-container"  id="status-container">
-  <div class="section-inner">
-    <h1 class='on-air'>
-      <a href="http://mixlr.com/prawn">
-        <ruby>
-          オンエア
-          <rt>
-            STREAMING
-          </rt>
-        </ruby>
-      </a>
-    </h1>
-  </div>
-</div>
+{% include stream-container.html %}
 
-<div class="section green" id="heart-container">
-  <div class="section-inner" id="status-container">
-
-    <div class="heart-waves">
-      <div id="tower">&#9745;</div>
-
-      <div class="heart-wave large">
-        &#9826;
-      </div>
-
-      <div class="heart-wave medium">
-        &#9826;
-      </div>
-
-      <div class="heart-wave small">
-        &#9826;
-      </div>
-    </div>
-
-
-  </div>
-</div>
+{% include heart-waves.html %}
 
 <a name="schedule"></a>
 <div class="section lightGreen">
