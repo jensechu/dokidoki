@@ -1,5 +1,4 @@
 .calendar-header-row {
-  display: inline-block;
   width: 100%;
 
   @include media-query($on-palm) {
@@ -7,24 +6,31 @@
   }
 
   .day-box {
+    min-height: 0px;
+    padding-top: 15px;
+
     @include media-query($on-palm) {
-      width: 100%;
-      float: left;
+      height: 70px;
+      box-sizing: border-box;
     }
   }
-}
-
-.day-box {
-  float: left;
-  width: 12.5%;
-  padding: 5px;
-  margin: 2px;
-  background-color: $green;
 
   .text {
     text-align: center;
     display: block;
     width: 100%;
+    font-size: 25px;
+    color: $lightGreen;
+
+    .translation {
+      font-size: 12px;
+      color: #000;
+      text-align: center;
+      line-height: 0px;
+      width: 100%;
+      display: block;
+      margin: 5px 0px;
+    }
 
     .desktop {
       @include media-query($on-palm) {
@@ -34,7 +40,6 @@
 
     .mobile {
       display: none;
-      font-size: 25px;
       color: $lightGreen;
 
       @include media-query($on-palm) {
@@ -42,13 +47,49 @@
       }
     }
   }
+}
 
-  .translation {
-    font-size: 12px;
-    text-align: center;
-    line-height: 0px;
+.calendar-row {
+  display: inline-block;
+  width: 100%;
+
+  @include media-query($on-palm) {
+    width: 79.5%;
+  }
+}
+
+.day-box {
+  float: left;
+  width: 12.5%;
+  padding: 5px;
+  margin: 2px;
+  min-height: 75px;
+  background-color: $green;
+
+  @include media-query($on-palm) {
     width: 100%;
+    float: left;
+    height: 60px;
+    min-height: 0px;
+  }
+
+  .show-title {
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 45px;
     display: block;
-    margin: 5px 0px 5px 0px;
+
+    @include media-query($on-palm) {
+      min-height: 0px;
+    }
+  }
+
+  .show-time {
+    font-size: 10px;
+    vertical-align: bottom;
+
+    @include media-query($on-palm) {
+      min-height: 60px;
+    }
   }
 }
