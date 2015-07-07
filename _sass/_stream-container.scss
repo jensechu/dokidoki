@@ -1,3 +1,8 @@
-.offline {
+.streaming-container {
   display: none;
+  text-align: center;
+
+  &.online {
+    display: none;
+  }
 }
