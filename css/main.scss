@@ -49,12 +49,12 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+  "about",
   "base",
   "calendar",
   "footer",
   "header",
   "heart-animation",
   "section",
-  "stream-container",
-  "programs"
+  "stream-container"
 ;
