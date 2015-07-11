@@ -1,5 +1,31 @@
 .section.header {
   padding-top: 25px;
+
+  &.inline-nav {
+    position: fixed;
+    padding: 25px 0 0;
+    
+    @include media-query($on-palm) {
+      float: left;
+      margin: 0 0 25px;
+    }
+
+    .site-nav {
+      max-width: none;
+      margin-top: 20px;
+
+      @include media-query($on-palm) {
+        float: left;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .nav-link {
+        float: left;
+        margin-left: 35px;
+      }
+    }
+  }
 }
 
 .site-title {

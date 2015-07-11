@@ -1,6 +1,6 @@
 "use strict";
 
-const getUserData = function(userID) {
+var getUserData = function(userID) {
   var URL         = "https://api.mixlr.com/users/" + userID;
   var mixlrAPI    = new XMLHttpRequest()
   var container   = document.getElementById("status-container");
