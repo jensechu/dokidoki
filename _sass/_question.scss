@@ -1,0 +1,26 @@
+.question-image {
+  margin-bottom: 25px;
+}
+
+.answer {
+  cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+  }
+
+  &.selected {
+    font-weight: bold;
+
+    &:after {
+      content: 'X';
+      margin-left: 15px;
+    }
+  }
+
+  &.selected.correct {
+    &:after {
+      content: 'O';
+    }
+  }
+}
