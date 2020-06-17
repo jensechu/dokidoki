@@ -1,13 +1,13 @@
 # Site settings
-title: doki doki fm
-email: jensen@dokidoki.fm
+title: doki doki party
+email: jensechu@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Eclectic curation of Japanese music including electronic, rock, jazz,
   and language lessons.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "dokidoki.fm" # the base hostname & protocol for your site
+url: "dokidoki.party" # the base hostname & protocol for your site
 twitter_username: jensechu
-github_username:  jensechu
+github_username: jensechu
 
 # Build settings
 markdown: kramdown
